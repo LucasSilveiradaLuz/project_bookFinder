@@ -1,10 +1,14 @@
 let addbutton = document.getElementById("Adicionar")
 let textInput = document.getElementById("textInput")
 let search = document.getElementById("Pesquisa")
+let card = document.getElementById("card")
 
 search.addEventListener("click", () => { 
-let query = textInput.value;  
-  if (!query) return;
+
+    let query = textInput.value;
+    if (!query) return;
+
+    card.style.display = "block"; // apenas mostra
   
 
  
@@ -48,6 +52,6 @@ let query = textInput.value;
         console.error('Erro ao buscar os dados:', error);
         return "Esse livro não existe na API"
       })
-    })
+    
    
-  
+    })
