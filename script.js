@@ -17,7 +17,7 @@ let query = textInput.value;
         const book = data.docs[0]; //
         document.getElementById("Title").innerText = book.title ? book.title : "Título não disponível"
   document.getElementById("Author").innerText = book.author_name ?  book.author_name.join(", ") : "Autor não disponível"
-  // document.getElementById("Description").innerText = book.description ? book.description.value : "Sinopse não disponível"
+ 
   document.getElementById("img").src =
   book.cover_i
     ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`

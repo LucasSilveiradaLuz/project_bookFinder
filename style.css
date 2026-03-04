@@ -3,7 +3,6 @@ body {
     min-height: 100vh;
 }
 
-
  .buttons {
     display: grid;
     background-color: #9c80c9;
@@ -33,8 +32,13 @@ body {
     border-radius: 3px;
 }
 .bookInfo {
-left: 330px;
+left: 375px;
 top: 100px;
 position: relative;
 font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
+    
+    
+    
+    
