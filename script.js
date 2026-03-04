@@ -15,8 +15,8 @@ let query = textInput.value;
      if (data.docs && data.docs.length > 0) {
       
         const book = data.docs[0]; //
-        document.getElementById("Title").innerText = book.title ? book.title : "Título não disponível"
-  document.getElementById("Author").innerText = book.author_name ?  book.author_name.join(", ") : "Autor não disponível"
+        document.getElementById("Title").innerText = "Nome: " + book.title ? book.title : "Título não disponível"
+  document.getElementById("Author").innerText = "Autor: " + book.author_name ?  book.author_name.join(", ") : "Autor não disponível"
  
   document.getElementById("img").src =
   book.cover_i
@@ -32,7 +32,7 @@ let query = textInput.value;
         ? workData.description
         : workData.description?.value;
 
-    document.getElementById("Description").innerText =
+    document.getElementById("Description").innerText = "Sinopse: " +
       description || "Sinopse não disponível";
       console.log(description)
   })

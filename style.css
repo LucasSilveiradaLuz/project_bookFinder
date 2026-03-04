@@ -1,7 +1,16 @@
 body {
-    background-color: #5e3b4f; 
+    background-image: url("background.image.jpeg");
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     min-height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+   
 }
+
 
  .buttons {
     display: grid;
@@ -33,11 +42,18 @@ body {
 }
 .bookInfo {
 left: 375px;
-top: 100px;
+top: 150px;
 position: relative;
 font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.bookImg {
+    top: auto;
+    margin: auto;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
     
     
     
