@@ -1,21 +1,40 @@
-
 body {
-
-    background-color: #20344f;
-    background-color: #4f558e;
-    
-    background-color: #e7a4b5;
     background-color: #5e3b4f; 
-
-
-
-}
-.buttons {
-    color: blueviolet;
+    min-height: 100vh;
 }
 
-.bookInfo {
+
+ .buttons {
+    display: grid;
     background-color: #9c80c9;
-    font-family:Arial, Helvetica, sans-serif;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    border-radius: 5px;
+ }
+.search {
+    padding: 10px;
+    top: 100px;
+    right: 1px;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+   border-radius: 100px;
+}
 
+
+.buttons input {
+    background-color: #9c80c9 !important; 
+    color: black;                        
+    border: 1px solid black;             
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.bookInfo {
+left: 330px;
+top: 100px;
+position: relative;
+font-family:Georgia, 'Times New Roman', Times, serif;
 }
