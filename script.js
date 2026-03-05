@@ -2,13 +2,14 @@ let addbutton = document.getElementById("Adicionar")
 let textInput = document.getElementById("textInput")
 let search = document.getElementById("Pesquisa")
 let card = document.getElementById("card")
-
+let img = document.getElementById("img")
 search.addEventListener("click", () => { 
 
     let query = textInput.value;
     if (!query) return;
 
     card.style.display = "block"; // apenas mostra
+    img.style.display = "block"
   
 
  
