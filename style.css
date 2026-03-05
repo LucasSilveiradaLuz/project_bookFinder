@@ -1,27 +1,30 @@
 body {
     background-image: url("background.image.jpeg");
-   background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+
     min-height: 100vh;
     margin: 0;
+
     color: white;
     font-family: 'Segoe UI', sans-serif;
-   
+
+    overflow-x: hidden; /*esconde barra de navegação  */
 }
 
 
- .buttons {
+.buttons {
     display: grid;
-    background-color: #9c80c9;
     gap: 10px;
     padding: 10px;
     position: absolute;
     top: 3px;
     right: 10px;
     border-radius: 5px;
- }
+}
+
 .search {
     padding: 10px;
     top: 100px;
@@ -29,37 +32,43 @@ body {
     display: flex;
     gap: 10px;
     position: absolute;
-   border-radius: 100px;
+    border-radius: 100px;
 }
 
-
 .buttons input {
-    background-color: #9c80c9 !important; 
-    color: black;                        
-    border: 1px solid black;             
+    background-color: #9c80c9 !important;
+    color: black;
+    border: 1px solid black;
     padding: 5px 10px;
     border-radius: 3px;
 }
-.bookInfo {
-left: 375px;
-top: 150px;
-position: relative;
-font-family:Georgia, 'Times New Roman', Times, serif;
+
+
+.bookLayout{
+display:flex;
+gap: 100px;
+margin-top:150px;
+justify-content:center;
+ align-items:flex-start; /*  pra agrupar elementos e alinhá-los  */
 }
 
-.bookImg {
-    top: auto;
-    margin: auto;
-    display: flex;
-    max-width: 100%;
+
+.bookImg img {
+    width: 320px;
     height: auto;
-   
+    border: 3px solid black;
 }
 
-fieldset {
-  border: 10px solid black; 
-  padding: 20px;         
-  border-radius: 5px;    
+
+.bookInfo {
+     max-width: 600px; /* tamanho máximo */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#card{
+    max-width:600px;
+    border: 3px solid black;
 }
 
 
