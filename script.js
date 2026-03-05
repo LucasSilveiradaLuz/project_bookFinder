@@ -19,8 +19,11 @@ search.addEventListener("click", () => {
      if (data.docs && data.docs.length > 0) {
       
         const book = data.docs[0]; //
-        document.getElementById("Title").innerText = "Nome: " + book.title ? book.title : "Título não disponível"
-  document.getElementById("Author").innerText = "Autor: " + book.author_name ?  book.author_name.join(", ") : "Autor não disponível"
+        document.getElementById("Title").innerText =
+"Nome: " + (book.title || "Título não disponível");
+
+document.getElementById("Author").innerText =
+"Autor: " + (book.author_name?.join(", ") || "Autor não disponível");
  
   document.getElementById("img").src =
   book.cover_i
@@ -53,5 +56,4 @@ search.addEventListener("click", () => {
         return "Esse livro não existe na API"
       })
     
-   
     })

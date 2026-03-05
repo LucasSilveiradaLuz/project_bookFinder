@@ -53,7 +53,16 @@ font-family:Georgia, 'Times New Roman', Times, serif;
     display: flex;
     max-width: 100%;
     height: auto;
+   
 }
+
+fieldset {
+  border: 10px solid black; 
+  padding: 20px;         
+  border-radius: 5px;    
+}
+
+
  
     
     
